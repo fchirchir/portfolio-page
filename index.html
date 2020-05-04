@@ -4,25 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felix Chirchir Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link href=https://fonts.google.com/specimen/Noto+Sans+JP?category=Sans+Serif />
 
 
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="images/image2.jpg" alt="">
+        <img src="images/image1.jpg" alt="">
       </div>
+
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"> </span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="#works" class="nav__link">My Work</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
 
@@ -31,55 +33,97 @@
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Felix Chirchir</strong>
+        Hi, I am <strong>Chirchir</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">New developer</P>
+      <p class="section__subtitle section__subtitle--intro">A New Developer</P>
       <img src="images/felix.jpg" alt="a profile picture of Felix" class="intro__img">
-
     </section>
 
-    <!-- MY Work -->
-    <section class="my-works" id="works">
-      <h2 class="section__title section__title--works">What I Do</h2>
-      <div class="works">
-        <div class="work">
+    <!-- MY Services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I Do</h2>
+      <div class="services">
+        <div class="service">
           <h3>Git,HTML and CSS</h3>
-          <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+          <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</P>
         </div> <!-- / work -->
-        <div class="work">
+
+        <div class="service">
           <h3>Atom and Git</h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</P>
+          <p>Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.</P>
         </div> <!-- / work -->
-        <div class="work">
+
+        <div class="service">
           <h3>Divs and Spans</h3>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+          <p>HTML is all about applying meaning to content. Whereas most HTML tags apply meaning (p makes a paragraph, h1 makes a heading etc.), the span and div tags apply no meaning at all. This might sound about as useful as a foam hammer but they are actually used quite extensively in conjunction with CSS.</P>
         </div> <!-- / work -->
       </div> <!-- / work -->
 
       <a href="#work" class="btn">My Work</a>
+
+
+    <!-- MY Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle"> </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/image6" alt="" class="portfolio__img"
+        <a/>
+
+        <!-- Portfolio item 02 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/image7" alt="" class="portfolio__img"
+        <a/>
+
+        <!-- Portfolio item 03 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/image8" alt="" class="portfolio__img"
+        <a/>
+        <!-- Portfolio item 04 -->
+        <a href="#" class="portfolio__item">
+          <img src="images/image9" alt="" class="portfolio__img"
+        <a/>
+        <!-- Portfolio item 05-->
+        <a href="#" class="portfolio__item">
+          <img src="images/image10" alt="" class="portfolio__img"
+        <a/>
+
+      </div>
     </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
       <p class="section__subtitle section__subtitle--about"></p>
+
       <div class="about-me__body">
-        <p>Some text about me. Some text about me. 1 pm lorem ipsum consectetur adipiscing elit, sed tempor and vitality, so that the labor and sorrow, some important things to do eiusmod. Over the years, I will come, who will nostrud aliquip out of her the advantage of exercise, so that stimulus efforts if the school district and longevity.</p>
-        <p>Want to be a pain in the cupidatat cillum has been criticized in the Duis et dolore magna flee produces no resultant pleasure.</p>
+        <p>My name is <em>Felix Chirchir</em>. I am a Cohort 2 student undertaking the Cloud and DevOps course.</p>
+        <p>Currently I am in the <em>Enterprise Services Support</em> team under Technology Division</p>
+        <p>I took this class to gain knowledge on Cloud Computing and DevOps</p>
+        <p> My hobbies include;</p>
+        <ol>
+          <li>Travelling</li>
+          <li>Watching Movies</li>
+          <li>Playing Soccer</li>
+          <li>Eating</li>
+        </ol>
       </div>
-      <img src="images/image3.jpg" alt="Developer image 3" class="about-me__img">
+
+      <img src="images/felix.jpg" alt="Developer image 3" class="about-me__img">
     </section>
 
-    <!-- Contact -->
-    <section class="my-contact" id="contact">
-      <h2 class="section__title"></h2>
-      <p class="section__subtitle"></p>
-
-      <div class="portfolio">
-
-        <img src="images/image5.jpg" alt="" class="portfolio__img">
-      </div>
-    </section>
+    <!-- Footer -->
+    <footer>
+      <a href="mailto:felixchirchir@gmail.com" class="footer__link">felixchirchir@gmail.com<a/>
+        <ul class="social-list">
+          <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">a</a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://github.com">b</a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://facebook.com">c</a></li>
+        </ul>
+    </footer>
 
   </body>
 </html>
