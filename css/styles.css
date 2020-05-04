@@ -7,7 +7,7 @@
 /* Custom  Properties*/
 
 :root {
-  --ff-primary: 'Source Sans', sans-serif;
+  --ff-primary: 'Source Sans Pro', sans-serif;
   --ff-secondary; 'Source Code Pro', monospace;
 
   --fw-reg: 300;
@@ -45,6 +45,10 @@ body {
   font-size: var(--fs-body);
   line-height: 1.6;
 }
+
+section {
+  padding: 5em 2
+}
 img {
   display: block;
   max-width: 100%;
@@ -78,6 +82,11 @@ strong {
 .btn:hover {
   transform: scale(1.1);
 }
+
+/* Header */
+
+nav { display: none;}
+
 /* Typography*/
 
 h1,
@@ -101,7 +110,10 @@ h3 {
 }
 
 .section__title--intro {
-  font-weight: var(--fw-reg)
+  font-weight: var(--fw-reg);
+}
+.section__title--intro strong {
+  display: block;
 }
 
 .section__subtitle {
@@ -112,7 +124,7 @@ h3 {
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-accent);
-  padding: .25em;
+  padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
 }
@@ -145,25 +157,25 @@ h3 {
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: 1.5em;
+    left: -1.5em;
     width: calc(100% + 1.5em)
   }
 }
 
-/* My Works Section */
-  .my-works {
+/* My Services Section */
+  .my-services {
     background-color: var(--clr-dark);
     background-image: url(../images/image2.jpg);
     background-size: cover;
     /* background-blend-mode:multiply; */
-    color: var()
+    color: var(--clr-light);
     text-align:center;
   }
-  .section__title--works {
+  .section__title--services {
     color: var(--clr-accent);
     position: relative;
   }
-  .section__title--works::after {
+  .section__title--services::after {
     content: '';
     display: block;
     width: 2em;
@@ -177,10 +189,13 @@ h3 {
     margin: 0 auto;
   }
 @media (min-width: 800px) {
-  .works {
+  .services {
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
+  }
+  .service + .service {
+    margin-left: 2em;
   }
 }
 
