@@ -151,3 +151,14 @@ h3 {
     background:var(--clr-light);
     opacity: 0.25;
   }
+  .work {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+@media (min-width: 800px) {
+  .works {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
