@@ -46,23 +46,68 @@ body {
 img {
   display: block;
   max-width: 100%;
-
 }
 
+section {
+  padding: 5em 2em;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
 /* Typography*/
 
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 h1 {
-  font-size:
+  font-size: var(--fs-h1)
 }
 h2{
-  font-size:
+  font-size: var(--fs-h2)
 }
 h3 {
-  font-size:
+  font-size: var(--fs-h3)
+}
+
+.section__title {
+  margin-bottom: .25rem
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg)
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about {
+  background: var(--clr-accent);
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* Introduction Section */
+.intro {
+  position: relative;
+}
+
+@media (min-width: 600px){
+  .intro {
+    display: grid;
+    grid-template-areas:
+    "img title"
+    "img subtitle"
+    grid-template-columns: min-content max-content;
+  }
+  .into__image {
+    grid-area: img;
+    min-width: 250px;
+  }
 }
