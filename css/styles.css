@@ -57,6 +57,27 @@ section {
 strong {
   font-weight: var(--fw-bold);
 }
+
+/* Buttons */
+
+.btn {
+  display: inli-block
+  padding: .5em 1.5em;
+  background: var(--clr-accent);
+  color: var(--cl-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+
+
+}
+.btn:hover {
+  transform: scale(1.1);
+}
 /* Typography*/
 
 h1,
